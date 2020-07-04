@@ -1,0 +1,33 @@
+{
+  "name": "sumantablog/auth-attempts-superadmin",
+  "description": "Add captcha and login attempts for laravel-superadmin",
+  "type": "library",
+  "keywords": ["laravel-superadmin", "extension", "auth-attempts"],
+  "homepage": "https://github.com/sumantablog/auth-attempts-superadmin",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0",
+    "mews/captcha": "^2.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\AuthAttempts\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\AuthAttempts\\AuthAttemptsServiceProvider"
+      ]
+
+    }
+  }
+}
